@@ -114,28 +114,60 @@
                 <div class="meals m"><img src="./assets/meal-6.jpg" alt=""><div class="transition"><h2>Lyulya kebab</h2><p>Tender and juicy skewers of ground lamb or beef, flavored with aromatic spices and herbs</p></div></div>
             </div>
         </div>
-        <div class="contact-container" id="contact">
-            <div class="chefs-title">
+<section id="contact">
+    <div class="contact-container">
+        <div class="chefs-title">
                 <h2>CONTACT</h2>
                 <p id="no">Need Help ?<span style="color: red;"> Contact Us</span></p>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.445785295115!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1681863129691!5m2!1sen!2sus" frameborder="0"></iframe>
-            <div class="details">
-                <div class="cards"><i class="fa-regular fa-map"></i><h3>Our Address</h3><p>A108 Adam Street, New York, NY 535022</p></div>
-                <div class="cards"><i class="fa-regular fa-envelope"></i><h3>Email Us</h3><p>contact@example.com</p></div>
-                <div class="cards"><i class="fa-solid fa-phone"></i><h3>Call Us</h3><p>+1 5589 55488 55</p></div>
-                <div class="cards"><i class="fa-solid fa-share-nodes"></i><h3>Opening Hours</h3><p>Mon-Sat: 11AM - 23PM; Sunday : Closed</p></div>
-                <div class="form">
-                    <form>
-                        <input type="text" name="name" placeholder="Your Name" id="margin">
-                        <input type="email" name="email" placeholder="Your Email">
-                        <input type="text" name="subject" placeholder="subject" id="sub">
-                        <textarea placeholder="Message" id="txt" name="message"></textarea>
-                        <input type="submit" value="Send Message" id="btn1">
-                    </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.617540608518!2d-73.98930432341903!3d40.74844047138914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="details">
+            <div class="cards">
+                <i class="fa-regular fa-map"></i>
+                <div>
+                    <h3>Our Address</h3>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+            </div>
+            
+            <div class="cards">
+                <i class="fa-regular fa-envelope"></i>
+                <div>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:contact@example.com">contact@example.com</a></p>
+                </div>
+            </div>
+            
+            <div class="cards">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <h3>Call Us</h3>
+                    <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                </div>
+            </div>
+            
+            <div class="cards">
+                <i class="fa-regular fa-clock"></i>
+                <div>
+                    <h3>Opening Hours</h3>
+                    <p><strong>Mon-Sat:</strong> 11AM - 23PM; <strong>Sunday:</strong> Closed</p>
                 </div>
             </div>
         </div>
+
+        <form class="contact-form" action="" method="POST">
+            <div class="form-row-half">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Message" rows="6" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+    </div>
+</section>
         <footer>
             <div class="footer-container">
                 <div class="foot-details">
