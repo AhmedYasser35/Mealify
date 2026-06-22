@@ -22,7 +22,6 @@ body{
 .navbar{
     width: 80%;
     height: 50%;
-    /* background-color: pink; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +54,7 @@ body{
     width: 0;
     height: 3px;
     position: absolute;
-    bottom: -5;
+    bottom: -5px;
     transition-property: all;
     transition-duration: 0.5s;
 }
@@ -92,7 +91,6 @@ body{
     width: 100%;
 }
 
-
 .logo a{
     text-decoration: none;
     position: relative;
@@ -104,7 +102,7 @@ body{
     height: 5px;
     border-radius: 50%;
     position: absolute;
-    right: -5;
+    right: -5px;
     top: 25px;
 }
 .logo h1{
@@ -128,7 +126,6 @@ body{
 .home{
     width: 90%;
     height: 90%;
-    /* background-color: brown; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,7 +172,7 @@ body{
     color: black;
     transition-property: all;
     transition: ease-in-out;
-    transition-duration:0.3S ;
+    transition-duration:0.3s ;
     display: flex;
     align-items: center;
     position: relative;
@@ -208,7 +205,6 @@ body{
     background-color: rgb(238, 238, 238);
     z-index: -1;
     transform: translateX(7px);
-
  }
  .btns i{
     margin-right: 15px;
@@ -224,11 +220,10 @@ body{
     animation-name: shake;
     animation-duration: 0.9s;
     animation-iteration-count: infinite;
-    
 }
 .image img{
     width: 100%;
-filter: drop-shadow(4px 4px 8px grey);
+    filter: drop-shadow(4px 4px 8px grey);
 }
 .chefs-container{
     margin-top: 50px;
@@ -256,12 +251,11 @@ filter: drop-shadow(4px 4px 8px grey);
     width: 100%;
 }
 .chefs-title p{
-color: rgb(33,37,41);
-font-size: 50px;
-font-family: amatic sc;
-margin-top: 0;
-width: 100%;
-
+    color: rgb(33,37,41);
+    font-size: 50px;
+    font-family: amatic sc;
+    margin-top: 0;
+    width: 100%;
 }
 .chef{
     width: 27%;
@@ -290,9 +284,8 @@ width: 100%;
     z-index: 4;
 }
 .chef img{
-width: 100%;
+    width: 100%;
 }
-
 .chef h3{
     color: rgb(33,37,41);
     font-family: sans-serif;
@@ -306,7 +299,6 @@ width: 100%;
     font-size: 15px;
     font-style: italic;
 }
-
 .chef:hover{
     transform: scale(1.05);
 }
@@ -330,12 +322,10 @@ width: 100%;
 .card ul{
     padding: 0;
 }
-
 .card li{
     list-style: none;
     margin-bottom: 15px;
 }
-
 .card a{
     text-decoration: none;
     color:rgba(55, 55, 63, 0.4);
@@ -343,9 +333,8 @@ width: 100%;
     transition: ease-in-out;
     transition-duration: 0.2s;
 }
-
 .card a:hover{
-    color: rgba(55, 55, 63, 0.9);;
+    color: rgba(55, 55, 63, 0.9);
 }
 
 .gallery-container{
@@ -368,10 +357,10 @@ width: 100%;
     overflow: hidden;
 }
 .meals h2{
-color: white;
-font-family: sans-serif;
-font-size: 24px;
-font-weight: 700;
+    color: white;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 .meals p{
     color: rgb(221, 221, 221);
@@ -383,7 +372,6 @@ font-weight: 700;
     transition-property: all;
     transition-duration: 0.5s;
 }
-
 .transition{
     position: absolute;
     width: 100%;
@@ -394,16 +382,11 @@ font-weight: 700;
     z-index: 1;
     text-align: center;
 }
-.s h2{
-    margin-top: 25%;
-}
-.m h2{
-    margin-top: 50%;
-}
-.l h2{
-    margin-top: 75%;
-}
-.meals:hover  .transition {
+.s h2{ margin-top: 25%; }
+.m h2{ margin-top: 50%; }
+.l h2{ margin-top: 75%; }
+
+.meals:hover .transition {
     background-color: rgba(0, 0, 0, 0.5);
     transform: translateY(-100%);
 }
@@ -411,145 +394,147 @@ font-weight: 700;
     transform: scale(1.2);
 }
 
-.contact-container{
+/* ==========================================================================
+   CONTACT SECTION FIXED
+   ========================================================================== */
+.contact-container {
     padding-top: 50px;
     width: 100%;
-    height: 200%;
+    height: auto; 
     background-color: white;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: flex-start;
 }
-.contact-container iframe{
-    width: 1310px;
+.contact-container iframe {
+    width: 100%;
+    max-width: 1310px;
     height: 350px;
     margin-bottom: 30px;
+    border: 0;
 }
-
-#no{
-    margin-bottom: 20px;
-}
-
-.details{
-    width: 85%;
+.details {
+    width: 100%;
+    max-width: 1310px;
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 15px;
+    margin-bottom: 20px;
 }
-.cards{
+.cards {
     box-sizing: border-box;
-    padding: 10px 10px 10px 90px;
-    width: 48.5%;
+    padding: 20px 20px 20px 90px;
+    width: calc(50% - 8px); 
     background-color: rgb(238, 238, 238);
-    margin: 0 15px 15px 0;
     position: relative;
     z-index: 1;
 }
-.cards i{
+.cards i {
     position: absolute;
     font-size: 22px;
     left: 30px;
-    top: 32%;
+    top: 35%;
     color: white;
 }
-
-.cards i::after{
+.cards i::after {
     content: '';
     background-color: rgb(206, 18, 18);
     height: 50px;
     width: 50px;
     border-radius: 50%;
     position: absolute;
-    left: -11px;
+    left: -14px;
     top: -12px;
     z-index: -1;
 }
-
-.form{
+.form {
     width: 100%;
+    max-width: 1310px;
+    padding: 0 15px;
     text-align: center;
 }
-.form input{
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.form input[type="text"], 
+.form input[type="email"] {
     box-sizing: border-box;
-    width: 49%;
+    width: 100%;
     padding: 15px;
 }
-#sub{
+#sub {
     box-sizing: border-box;
     width: 100%;
     padding: 15px;
     margin-bottom: 15px;
 }
-
-#margin{
-    margin-right: 21.5px;
-    margin-bottom: 15px;
-}
-
-#txt{
-   height: 40%;
+#txt {
+   height: 150px;
    width: 100%;
    box-sizing: border-box;
    padding: 15px;
+   margin-bottom: 15px;
+   resize: vertical;
 }
-
-#btn1{
+#btn1 {
     text-decoration: none;
-    width:200px ;
-    height:45px ;
+    width: 200px;
+    height: 45px;
     padding: 10px 25px;
     color: white;
     border: none;
     background-color: rgb(206, 18, 18);
     border-radius: 30px;
-    transition-property: all;
-    transition: ease-in-out;
-    transition-duration:0.3s;
-    margin-top: 30px;
+    transition: all ease-in-out 0.3s;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    cursor: pointer;
 }
-#btn1:hover{
+#btn1:hover {
     background-color: red;
 }
 
-.footer-container{
+/* ==========================================================================
+   FOOTER SECTION FIXED
+   ========================================================================== */
+footer {
+    background-color: black;
+    padding: 60px 0;
+    width: 100%;
+}
+.footer-container {
     width: 90%;
-    height: 50%;
+    max-width: 1310px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
-footer{
-    background-color: black;
-    padding: 40px 0;
-}
-
-.foot-details{
+.foot-details {
     width: 25%;
-    height: 100%;
     position: relative;
 }
-.foot-details img{
-    width: 12%;
+.foot-details img {
+    width: 40px;
     position: absolute;
-    top: 22px;
+    top: -5px;
     left: 0;
 }
-.foot-logo h2{
+.foot-logo h2 {
     color: white;
     font-family: open sans;
     font-size: 30px;
     font-weight: 700;
-    margin-left: 50px;
-    height: max-content;
-    width: max-content;
+    margin: 0 0 15px 50px;
     position: relative;
+    width: max-content;
 }
-.foot-details p{
-    color: white;
-    font-family: open sans;
-}
-
-.foot-logo h2::after{
+.foot-logo h2::after {
     content: '';
     background-color: rgb(206, 18, 18);
     width: 5px;
@@ -559,56 +544,63 @@ footer{
     right: -5px;
     top: 25px;
 }
-.foot-details h3{
+.foot-details p {
+    color: white;
+    font-family: open sans;
+    line-height: 1.5;
+}
+.foot-details h3 {
     color: white;
     font-family: sans-serif;
-    font-size:19px ;
+    font-size: 19px;
     text-align: center;
+    padding-bottom: 10px;
     border-bottom: 2px solid grey;
+    margin-top: 25px;
 }
-
-.social-icons a{
-    text-decoration: none;
-    color: white;
-    font-size:24px ;
-}
-.social-icons ul{
+.social-icons ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-left: 0;
+    margin: 15px 0 0 0;
 }
-
-.subscribe{
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+.subscribe {
     width: 45%;
-    height: 100%;
 }
-.messagebox h3{
+.messagebox h3 {
     color: white;
     font-family: sans-serif;
     font-size: 19px;
-    font-weight:700 ;
+    font-weight: 700;
+    margin-top: 0;
 }
-.messagebox p{
+.messagebox p {
     color: white;
     font-family: open sans;
+    margin-bottom: 20px;
 }
-.the-message{
+.the-message {
     width: 100%;
-    height: 45px;
     display: flex;
+    gap: 10px;
 }
-.the-message input{
-    width: 80%;
-    height: 100%;
-    padding: 5px;
+.the-message input {
+    flex: 1;
+    height: 45px;
+    padding: 10px;
+    border: none;
 }
-.button1{
+.button1 {
     box-sizing: border-box;
-    width: 20%;
-    height: 100%;
-    padding: 5px;
+    width: 120px;
+    height: 45px;
     background-color: red;
     color: white;
     cursor: pointer;
@@ -618,66 +610,69 @@ footer{
     justify-content: center;
     gap: 5px;
 }
-.quick-links a{
-    text-decoration: none;
-    color: white;
-    font-family: open sans;
-}
-.quick-links h3{
+.quick-links h3 {
     color: white;
     font-family: sans-serif;
     font-size: 19px;
     font-weight: 700;
 }
-.quick-links i{
-    font-size: 10px;
-    color: white;
-    margin-right: 5px;
-    margin-bottom: 10px;
-}
-.quick-links li{
-    width: 49%;
-    transition: all ease-in-out 0.3s;
-}
-.quick-links ul{
+.quick-links ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 0;
+    margin: 0;
 }
-.quick-links li:hover{
-    transform: translateX(10px);
-    background-color: rgba(128, 128, 128, 0.242);
+.quick-links li {
+    width: 48%;
+    margin-bottom: 10px;
+    transition: all ease-in-out 0.3s;
 }
-.touch{
-    width: 25%;
-    height: 100%;
-}
-.touch span{
+.quick-links i {
+    font-size: 10px;
     color: white;
-    font-family: open sans;
+    margin-right: 8px;
 }
-.touch h3{
-    color: white;
-    font-family: sans-serif;
-    font-size: 19px;
-    font-weight: 700;
-}
-.touch i{
-    color: rgb(186, 0, 0);
-    font-size: 22px;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-.touch a{
+.quick-links a {
     text-decoration: none;
     color: white;
     font-family: open sans;
 }
-.touch ul{
+.quick-links li:hover {
+    transform: translateX(10px);
+    background-color: rgba(128, 128, 128, 0.24);
+}
+.touch {
+    width: 25%;
+}
+.touch h3 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 0;
+}
+.touch ul {
     padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.touch li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.touch i {
+    color: rgb(186, 0, 0);
+    font-size: 18px;
+    margin-top: 3px;
+}
+.touch span, .touch a {
+    color: white;
+    font-family: open sans;
+    text-decoration: none;
 }
 
 @keyframes shake{
@@ -695,12 +690,11 @@ footer{
 }
 
 /* ==========================================================================
-   RESPONSIVE OVERRIDES
+   RESPONSIVE MEDIA QUERIES
    ========================================================================== */
-
 @media (max-width: 1200px) {
     .contact-container iframe {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -749,14 +743,6 @@ footer{
     .s h2, .m h2, .l h2 {
         margin-top: 25%;
     }
-    .contact-container {
-        height: auto;
-        padding-bottom: 50px;
-    }
-    .cards {
-        width: 100%;
-        margin-right: 0;
-    }
     .footer-container {
         flex-direction: column;
         height: auto;
@@ -791,12 +777,20 @@ footer{
         float: none;
         margin: 5px 10px;
     }
-    .form input {
-        width: 100%;
+    
+    /* Contact Mobile Breakdowns */
+    .cards {
+        width: 100%; 
     }
-    #margin {
-        margin-right: 0;
+    .form-row {
+        flex-direction: column;
+        gap: 0;
     }
+    .form input[type="text"], 
+    .form input[type="email"] {
+        margin-bottom: 15px;
+    }
+    
     .chef {
         width: 100%;
         margin-right: 0;
@@ -808,6 +802,8 @@ footer{
     .meals {
         width: 100%;
     }
+    
+    /* Footer Mobile Breakdowns */
     .the-message {
         flex-direction: column;
         height: auto;
